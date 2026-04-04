@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const openSans = Open_Sans({
-  variable: "--font-open-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
     <html
   lang="en"
-  className={`${openSans.variable} h-full antialiased bg-background text-foreground`}
+  className={`${openSans.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased bg-background text-foreground`}
 >
       <body className="min-h-full flex flex-col">
         {children}
