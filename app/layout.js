@@ -26,9 +26,9 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
     <html
-      lang="en"
-      className={`${openSans.variable} h-full antialiased`}
-    >
+  lang="en"
+  className={`${openSans.variable} h-full antialiased bg-background text-foreground`}
+>
       <body className="min-h-full flex flex-col">
         {children}
         </body>
